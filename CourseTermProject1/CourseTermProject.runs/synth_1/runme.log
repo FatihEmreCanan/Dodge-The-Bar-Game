@@ -1,0 +1,334 @@
+
+*** Running vivado
+    with args -log top_module_of_game.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_module_of_game.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source top_module_of_game.tcl -notrace
+Command: synth_design -top top_module_of_game -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 13572
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1017.863 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_module_of_game' [C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/top_module_of_game.vhd:18]
+INFO: [Synth 8-3491] module 'game_clock' declared at 'C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/game_clock.vhd:10' bound to instance 'pixel_clock' of component 'game_clock' [C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/top_module_of_game.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'game_clock' [C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/game_clock.vhd:15]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-113] binding component instance 'clkin1_buf' to cell 'IBUFG' [C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/game_clock.vhd:30]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT bound to: 34 - type: integer 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKIN_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE bound to: 27 - type: integer 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: double 
+	Parameter CLK_FEEDBACK bound to: CLKFBOUT - type: string 
+	Parameter COMPENSATION bound to: SYSTEM_SYNCHRONOUS - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 5 - type: integer 
+	Parameter REF_JITTER bound to: 0.010000 - type: double 
+	Parameter RESET_ON_LOSS_OF_LOCK bound to: 0 - type: bool 
+INFO: [Synth 8-113] binding component instance 'pll_base_inst' to cell 'PLL_BASE' [C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/game_clock.vhd:35]
+INFO: [Synth 8-113] binding component instance 'clkf_buf' to cell 'BUFG' [C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/game_clock.vhd:61]
+INFO: [Synth 8-113] binding component instance 'clkout1_buf' to cell 'BUFG' [C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/game_clock.vhd:66]
+INFO: [Synth 8-256] done synthesizing module 'game_clock' (1#1) [C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/game_clock.vhd:15]
+INFO: [Synth 8-3491] module 'logic_of_game' declared at 'C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/logic_of_game.vhd:7' bound to instance 'game_mechanics' of component 'logic_of_game' [C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/top_module_of_game.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'logic_of_game' [C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/logic_of_game.vhd:21]
+INFO: [Synth 8-3491] module 'Lanes' declared at 'C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/Lanes.vhd:5' bound to instance 'lane_1' of component 'Lanes' [C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/logic_of_game.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'Lanes' [C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/Lanes.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'Lanes' (2#1) [C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/Lanes.vhd:13]
+INFO: [Synth 8-3491] module 'Lanes' declared at 'C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/Lanes.vhd:5' bound to instance 'lane_2' of component 'Lanes' [C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/logic_of_game.vhd:69]
+INFO: [Synth 8-3491] module 'Lanes' declared at 'C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/Lanes.vhd:5' bound to instance 'lane_3' of component 'Lanes' [C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/logic_of_game.vhd:76]
+INFO: [Synth 8-3491] module 'Lanes' declared at 'C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/Lanes.vhd:5' bound to instance 'lane_4' of component 'Lanes' [C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/logic_of_game.vhd:83]
+INFO: [Synth 8-3491] module 'obstacle_generator' declared at 'C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/obstacle_generator.vhd:6' bound to instance 'creating_obstacle' of component 'obstacle_generator' [C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/logic_of_game.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'obstacle_generator' [C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/obstacle_generator.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'obstacle_generator' (3#1) [C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/obstacle_generator.vhd:14]
+INFO: [Synth 8-3491] module 'lane_selection' declared at 'C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/lane_selection.vhd:7' bound to instance 'choosing_lane' of component 'lane_selection' [C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/logic_of_game.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'lane_selection' [C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/lane_selection.vhd:16]
+WARNING: [Synth 8-614] signal 'input_of_obstacle' is read in the process but is not in the sensitivity list [C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/lane_selection.vhd:20]
+WARNING: [Synth 8-614] signal 'initial_obstacle' is read in the process but is not in the sensitivity list [C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/lane_selection.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'lane_selection' (4#1) [C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/lane_selection.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'logic_of_game' (5#1) [C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/logic_of_game.vhd:21]
+INFO: [Synth 8-3491] module 'VGA' declared at 'C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/VGA.vhd:8' bound to instance 'sync_module' of component 'VGA' [C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/top_module_of_game.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'VGA' [C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/VGA.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'VGA' (6#1) [C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/VGA.vhd:18]
+INFO: [Synth 8-3491] module 'Drawing_of_game' declared at 'C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/Drawing_of_game.vhd:7' bound to instance 'draw_the_boxes' of component 'Drawing_of_game' [C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/top_module_of_game.vhd:114]
+INFO: [Synth 8-638] synthesizing module 'Drawing_of_game' [C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/Drawing_of_game.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'Drawing_of_game' (7#1) [C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/Drawing_of_game.vhd:20]
+INFO: [Synth 8-3491] module 'seven_segment_display' declared at 'C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/seven_segment_display.vhd:6' bound to instance 'score_disp' of component 'seven_segment_display' [C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/top_module_of_game.vhd:126]
+INFO: [Synth 8-638] synthesizing module 'seven_segment_display' [C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/seven_segment_display.vhd:15]
+INFO: [Synth 8-3491] module 'binary_to_decimal_converter' declared at 'C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/seven_segment_display.vhd:111' bound to instance 'converter' of component 'binary_to_decimal_converter' [C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/seven_segment_display.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'binary_to_decimal_converter' [C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/seven_segment_display.vhd:119]
+INFO: [Synth 8-256] done synthesizing module 'binary_to_decimal_converter' (8#1) [C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/seven_segment_display.vhd:119]
+INFO: [Synth 8-3491] module 'clockdivider' declared at 'C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/seven_segment_display.vhd:200' bound to instance 'clock' of component 'clockdivider' [C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/seven_segment_display.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'clockdivider' [C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/seven_segment_display.vhd:205]
+INFO: [Synth 8-256] done synthesizing module 'clockdivider' (9#1) [C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/seven_segment_display.vhd:205]
+INFO: [Synth 8-226] default block is never used [C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/seven_segment_display.vhd:84]
+INFO: [Synth 8-226] default block is never used [C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/seven_segment_display.vhd:92]
+INFO: [Synth 8-256] done synthesizing module 'seven_segment_display' (10#1) [C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/seven_segment_display.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'top_module_of_game' (11#1) [C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/sources_1/new/top_module_of_game.vhd:18]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1017.863 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1017.863 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1017.863 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1017.863 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+WARNING: [Netlist 29-432] The IBUFG primitive 'pixel_clock/clkin1_buf' has been retargeted to an IBUF primitive only. No BUFG will be added. If a global buffer is intended, please instantiate an available global clock primitive from the current architecture.
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/constrs_1/new/const.xdc]
+WARNING: [Vivado 12-584] No ports matched 'dp'. [C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/constrs_1/new/const.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/constrs_1/new/const.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dp'. [C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/constrs_1/new/const.xdc:98]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/constrs_1/new/const.xdc:98]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/constrs_1/new/const.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/fcana/CourseTermProject1/CourseTermProject.srcs/constrs_1/new/const.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_module_of_game_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_module_of_game_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1089.246 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IBUFG => IBUF: 1 instance 
+  PLL_BASE => MMCME2_ADV: 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1089.246 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1089.246 ; gain = 71.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1089.246 ; gain = 71.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1089.246 ; gain = 71.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1089.246 ; gain = 71.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 3     
+	   2 Input   11 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 11    
+	   2 Input    4 Bit       Adders := 7     
+	   2 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 4     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 6     
+	               16 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   3 Input   32 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 1     
+	   7 Input   12 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 19    
+	   2 Input    4 Bit        Muxes := 22    
+	   4 Input    4 Bit        Muxes := 3     
+	   3 Input    4 Bit        Muxes := 1     
+	   5 Input    4 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 5     
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 15    
+	   4 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1089.246 ; gain = 71.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1089.246 ; gain = 71.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1089.246 ; gain = 71.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1089.246 ; gain = 71.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1089.246 ; gain = 71.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1089.246 ; gain = 71.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1089.246 ; gain = 71.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1089.246 ; gain = 71.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1089.246 ; gain = 71.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1089.246 ; gain = 71.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     3|
+|2     |CARRY4   |    40|
+|3     |LUT1     |     5|
+|4     |LUT2     |    37|
+|5     |LUT3     |    28|
+|6     |LUT4     |    88|
+|7     |LUT5     |    51|
+|8     |LUT6     |   126|
+|9     |PLL_BASE |     1|
+|10    |FDCE     |   160|
+|11    |FDPE     |     1|
+|12    |FDRE     |   159|
+|13    |LDC      |     1|
+|14    |IBUF     |     3|
+|15    |IBUFG    |     1|
+|16    |OBUF     |    28|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1089.246 ; gain = 71.383
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:31 . Memory (MB): peak = 1089.246 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1089.246 ; gain = 71.383
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1089.246 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 43 Unisim elements for replacement
+WARNING: [Netlist 29-432] The IBUFG primitive 'pixel_clock/clkin1_buf' has been retargeted to an IBUF primitive only. No BUFG will be added. If a global buffer is intended, please instantiate an available global clock primitive from the current architecture.
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1089.246 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  IBUFG => IBUF: 1 instance 
+  LDC => LDCE: 1 instance 
+  PLL_BASE => MMCME2_ADV: 1 instance 
+
+INFO: [Common 17-83] Releasing license: Synthesis
+58 Infos, 6 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1089.246 ; gain = 71.383
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/fcana/CourseTermProject1/CourseTermProject.runs/synth_1/top_module_of_game.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_module_of_game_utilization_synth.rpt -pb top_module_of_game_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 22 13:11:24 2020...

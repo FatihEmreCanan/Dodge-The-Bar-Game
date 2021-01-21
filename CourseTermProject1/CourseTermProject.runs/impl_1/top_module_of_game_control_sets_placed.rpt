@@ -1,0 +1,94 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Tue Dec 22 13:12:04 2020
+| Host         : DESKTOP-B3A3VBG running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_module_of_game_control_sets_placed.rpt
+| Design       : top_module_of_game
+| Device       : xc7a35t
+-----------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    16 |
+|    Minimum number of control sets                        |    16 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    63 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    16 |
+| >= 0 to < 4        |     8 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     2 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     5 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              32 |           11 |
+| No           | No                    | Yes                    |             161 |           35 |
+| No           | Yes                   | No                     |              77 |           27 |
+| Yes          | No                    | No                     |               3 |            2 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              48 |           17 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------------------------------------------+-------------------------------------------------+----------------------------------------------------------------------+------------------+----------------+--------------+
+|                              Clock Signal                             |                  Enable Signal                  |                           Set/Reset Signal                           | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------------------------------------------------------------+-------------------------------------------------+----------------------------------------------------------------------+------------------+----------------+--------------+
+|  pixel_clock/CLK_OUT1                                                 |                                                 | sync_module/HS0                                                      |                1 |              1 |         1.00 |
+|  pixel_clock/CLK_OUT1                                                 |                                                 | sync_module/VS0                                                      |                1 |              1 |         1.00 |
+|  game_mechanics/creating_obstacle/initial_obstacle_reg[2]_LDC_i_1_n_0 |                                                 | game_mechanics/death                                                 |                1 |              1 |         1.00 |
+|  update                                                               |                                                 | game_mechanics/creating_obstacle/initial_obstacle_reg[2]_LDC_i_1_n_0 |                1 |              1 |         1.00 |
+|  update                                                               |                                                 | game_mechanics/death                                                 |                1 |              1 |         1.00 |
+|  score_disp/clock/CLK                                                 |                                                 |                                                                      |                1 |              2 |         2.00 |
+|  pixel_clock/CLK_OUT1                                                 |                                                 |                                                                      |                2 |              3 |         1.50 |
+|  pixel_clock/CLK_OUT1                                                 | sync_module/eqOp                                |                                                                      |                2 |              3 |         1.50 |
+|  pixel_clock/CLK_OUT1                                                 | sync_module/eqOp                                | sync_module/vertical_counter                                         |                7 |              8 |         1.14 |
+|  update                                                               | game_mechanics/score_gained                     | player_input_IBUF[0]                                                 |                2 |              8 |         4.00 |
+|  pixel_clock/CLK_OUT1                                                 |                                                 | sync_module/eqOp                                                     |                8 |             11 |         1.38 |
+|  update                                                               |                                                 |                                                                      |                8 |             27 |         3.38 |
+|  pixel_clock/CLK_OUT1                                                 |                                                 | score_disp/clock/f_clk                                               |                8 |             31 |         3.88 |
+|  pixel_clock/CLK_OUT1                                                 |                                                 | game_mechanics/clear                                                 |                8 |             32 |         4.00 |
+|  update                                                               | game_mechanics/score_mechanism.count[0]_i_2_n_0 | game_mechanics/score_mechanism.count[0]_i_1_n_0                      |                8 |             32 |         4.00 |
+|  update                                                               |                                                 | game_mechanics/lane_1/AR[0]                                          |               33 |            159 |         4.82 |
++-----------------------------------------------------------------------+-------------------------------------------------+----------------------------------------------------------------------+------------------+----------------+--------------+
+
+
